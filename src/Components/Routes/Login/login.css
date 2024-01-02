@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+
+/* Styles for web view */
+.login {
+  max-width: 978px;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #e9ecef;
+  border-radius: 5px;
+  box-shadow: 1px 3px 10px #e9ecef;
+  background-color: white;
+}
+
+.login span {
+  color: #adb5bd;
+}
+
+#grid-layout {
+  max-width: 320px;
+  width: 100%;
+  margin: 2em auto;
+}
+
+#grid-layout > input,
+.btn {
+  border: 1px solid #e9ecef;
+  padding: 0.9em 1em;
+}
+
+#grid-layout > input:focus {
+  outline: none;
+}
+
+#grid-layout > .btn {
+  background-color: #003049;
+  color: #e9ecef;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+  gap: 1em;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.login .col-1 {
+  margin: auto;
+  padding: 3em 0;
+}
+
+.login .col-2 img {
+  width: 480px;
+  height: 100%;
+  object-fit: cover;
+  align-self: flex-end;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  display: none;
+}
+
+@media screen and (min-width: 860px) {
+  /* Styles for web view */
+  .login {
+    width: 30%;
+  }
+
+  #grid-layout {
+    max-width: 320px;
+    width: 100%;
+    margin: 2em auto;
+  }
+
+  .login .col-2 img {
+    display: initial;
+  }
+}
+
+/* Styles for mobile view */
+@media screen and (max-width: 600px) {
+  .login {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  #grid-layout {
+    max-width: 320px;
+    width: 100%;
+    margin: 2em auto;
+  }
+
+  .login .col-1 {
+    padding: 2em 0;
+  }
+
+  .login .col-2 img {
+    display: none;
+  }
+}

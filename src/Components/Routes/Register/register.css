@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+
+* > * {
+  font-family: 'Mulish', sans-serif;
+  margin: 0;
+}
+
+body {
+  background: #0f0c29;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #24243e,
+    #302b63,
+    #0f0c29
+  );
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #24243e,
+    #302b63,
+    #0f0c29
+  );
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.link-no-underline {
+  text-decoration: none;
+  font-weight: 300;
+  color: red;
+}
+
+.App {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.register {
+  max-width: 978px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #e9ecef;
+  border-radius: 5px;
+  box-shadow: 1px 3px 10px #e9ecef;
+  background-color: white;
+  margin: 2em auto;
+  padding: 1em;
+}
+
+.register span {
+  color: #adb5bd;
+}
+
+#grid-layout {
+  max-width: 320px;
+  width: 100%;
+}
+
+#grid-layout > input,
+.btn {
+  border: 1px solid #e9ecef;
+  padding: 0.9em 1em;
+  margin-bottom: 1em;
+}
+
+#grid-layout > input:focus {
+  outline: none;
+}
+
+#grid-layout > .btn {
+  background-color: #003049;
+  color: #e9ecef;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.col-1 {
+  margin: auto;
+  padding: 3em 0;
+}
+
+.col-2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .register {
+    flex-direction: row;
+    width: 80%;
+    margin: 2em auto;
+    padding: 2em;
+  }
+
+  .col-1 {
+    width: 50%;
+    padding: 0;
+  }
+
+  .col-2 {
+    width: 50%;
+    position: relative;
+  }
+
+  .col-2 img {
+    display: initial;
+  }
+}
