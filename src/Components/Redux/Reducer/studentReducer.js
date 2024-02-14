@@ -1,15 +1,12 @@
-import { createSlice } from '@reduxjs/toolkit';
-
-const initialState = {
-  students: [],
-};
+import { createSlice } from "@reduxjs/toolkit";
+import { userList } from "./data";
 
 export const studentReducer = createSlice({
-  name: 'student',
-  initialState,
+  name: "student",
+  initialState: [],
   reducers: {
     addStudent: (state, action) => {
-      state.students.push(action.payload);
+      state.push(action.payload);
     },
   },
 });
