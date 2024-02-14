@@ -11,6 +11,7 @@ export const studentReducer = createSlice({
   },
 });
 
+
 export const { addStudent } = studentReducer.actions;
 
 export const selectStudents = (state) => state.student.students;
