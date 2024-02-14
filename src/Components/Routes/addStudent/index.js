@@ -15,7 +15,6 @@ import { login, selectUser } from "../../Redux/Reducer/userReducer";
 import SideBar from "../../../assets/SideBar"
 
 
-
 const courses = ["ENGINEERING", "MEDICAL", "MANAGEMENT", "ARTS", "SCIENCE"];
 const useStyles = makeStyles((theme) => ({
   root: {
